@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class Peticiones {
-  static const String baseUrl = 'http://localhost:9000/api';
+  static const String baseUrl = 'https://backdeliflutter.onrender.com/api';
 
   static Future<void> _manejarErrores(http.Response response) async {
     if (response.statusCode != 200 && response.statusCode != 201) {
